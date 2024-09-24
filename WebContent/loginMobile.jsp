@@ -28,7 +28,7 @@ try {
 			session.setAttribute("userMail"    , user.getEmail());    
 			session.setAttribute("telNo"     , user.getTel_no());   
 			session.setAttribute("authLevel"     , user.getAuth_level());   
-	        
+
 	        
 	        // 자동로그인 여부 .. 
 	        String auto_login = request.getParameter("auto_login"); 

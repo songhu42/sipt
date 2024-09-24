@@ -137,13 +137,11 @@ public class Admin_mstService {
 
 		prmMap.put("ADMIN_ID", vo.getAdmin_id());
 		prmMap.put("ADMIN_NM", vo.getAdmin_nm());
-		prmMap.put("AUTH_LEVEL", vo.getAuth_level());
 		prmMap.put("TEL_NO", vo.getTel_no());
-		prmMap.put("DEVICE_TOKEN", vo.getDevice_token());
-		prmMap.put("PASSWD", vo.getPasswd());
 		prmMap.put("EMAIL", vo.getEmail());
-		prmMap.put("IMAGE", vo.getImage());
-		prmMap.put("STATE", vo.getState());
+		prmMap.put("AUTO_LOGIN", vo.getAuto_login());
+		prmMap.put("PASSWD", vo.getPasswd());
+		prmMap.put("AUTH_LEVEL", vo.getAuth_level());
 
 		rtn = im.Insert(prmMap, "ADMIN_MST.insert");
 		if( rtn <= 0 ) throw new Exception("SQL Exception"); 
@@ -158,13 +156,11 @@ public class Admin_mstService {
 
 		prmMap.put("ADMIN_ID", vo.getAdmin_id());
 		prmMap.put("ADMIN_NM", vo.getAdmin_nm());
-		prmMap.put("AUTH_LEVEL", vo.getAuth_level());
 		prmMap.put("TEL_NO", vo.getTel_no());
-		prmMap.put("DEVICE_TOKEN", vo.getDevice_token());
-		prmMap.put("PASSWD", vo.getPasswd());
 		prmMap.put("EMAIL", vo.getEmail());
-		prmMap.put("IMAGE", vo.getImage());
-		prmMap.put("STATE", vo.getState());
+		prmMap.put("AUTO_LOGIN", vo.getAuto_login());
+		prmMap.put("PASSWD", vo.getPasswd());
+		prmMap.put("AUTH_LEVEL", vo.getAuth_level());
 
 		rtn = im.Update(prmMap, "ADMIN_MST.update");
 		if( rtn <= 0 ) throw new Exception("SQL Exception"); 

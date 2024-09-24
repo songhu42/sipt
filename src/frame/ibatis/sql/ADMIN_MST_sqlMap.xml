@@ -7,7 +7,7 @@
     </select>
 
     <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Admin_mst">
-		SELECT A.ADMIN_ID, A.ADMIN_NM, A.AUTO_LOGIN, A.PASSWD, A.REG_DT
+		SELECT A.ADMIN_ID, A.ADMIN_NM, A.TEL_NO, A.EMAIL, A.AUTO_LOGIN, A.PASSWD, A.AUTH_LEVEL, A.REG_DT
 		FROM ADMIN_MST A 
         <isNotEmpty property="WHERE_OPTION">
         $WHERE_OPTION$
@@ -16,7 +16,7 @@
     </select>
     
     <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Admin_mst">
-		SELECT A.ADMIN_ID, A.ADMIN_NM, A.AUTO_LOGIN, A.PASSWD, A.REG_DT
+		SELECT A.ADMIN_ID, A.ADMIN_NM, A.TEL_NO, A.EMAIL, A.AUTO_LOGIN, A.PASSWD, A.AUTH_LEVEL, A.REG_DT
 		FROM ADMIN_MST A 
         WHERE A.ADMIN_ID = #ADMIN_ID#
     </select>
@@ -28,13 +28,13 @@
     </statement> 
         
     <statement id="insert" parameterClass="java.util.Map" resultClass="int">
-		INSERT INTO ADMIN_MST(ADMIN_ID, ADMIN_NM, AUTO_LOGIN, PASSWD, REG_DT) 
-		VALUES (#ADMIN_ID#, #ADMIN_NM#, #AUTO_LOGIN#, #PASSWD#, NOW())
+		INSERT INTO ADMIN_MST(ADMIN_ID, ADMIN_NM, TEL_NO, EMAIL, AUTO_LOGIN, PASSWD, AUTH_LEVEL,  REG_DT) 
+		VALUES (#ADMIN_ID#, #ADMIN_NM#, #TEL_NO#, #EMAIL#, #AUTO_LOGIN#, #PASSWD#, #AUTH_LEVEL#, NOW())
     </statement> 
     
     <statement id="update" parameterClass="java.util.Map" resultClass="int">
 		UPDATE ADMIN_MST SET  
-			ADMIN_NM=#ADMIN_NM#, AUTO_LOGIN=#AUTO_LOGIN#, PASSWD=#PASSWD# 
+			ADMIN_NM=#ADMIN_NM#, TEL_NO=#TEL_NO#, EMAIL=#EMAIL#, AUTO_LOGIN=#AUTO_LOGIN#, PASSWD=#PASSWD#, AUTH_LEVEL=#AUTH_LEVEL#
 		WHERE ADMIN_ID = #ADMIN_ID# 
     </statement> 
         

@@ -15,6 +15,7 @@
 	String authString = " 'U' ";
 	System.out.println("authLevel : " + authLevel); 
 	
+	
 	if( authLevel.equals("O") ) authString = " 'U', 'O' ";
 	else if( authLevel.equals("M") ) authString = " 'U', 'O', 'M' ";
 	else if( authLevel.equals("S") ) authString = " 'U', 'O', 'M', 'S' ";

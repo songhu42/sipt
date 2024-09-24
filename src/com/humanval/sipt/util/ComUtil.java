@@ -14,6 +14,8 @@ import java.util.StringTokenizer;
 import java.util.TimeZone;
 import java.util.Vector;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * 
@@ -23,6 +25,18 @@ import java.util.Vector;
 
 public class ComUtil {
 	
+	/***
+	 * 현재 시간을 형식에 맞게 리턴한다. 
+	 * @param frmt : "yyyy-MM-dd HH:mm:ss"
+	 * @return
+	 */
+	public static String getCurDt(String frmt) {
+		LocalDateTime now = LocalDateTime.now();
+	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern(frmt);
+	    String formattedNow = now.format(formatter);
+	    return formattedNow; 
+	}
+    
 	public static String getIntFormat(int num){
 		NumberFormat nf = NumberFormat.getNumberInstance();
 		nf.setMaximumFractionDigits(0);
@@ -609,33 +623,21 @@ public class ComUtil {
 	}
 	
 	/**
-	 * �쁽�옱 �궇吏쒕�� yyyyMMddHHmmss�삎�깭濡� 諛섑솚
+	 * 현재시간 :  yyyyMMddHHmmss 
 	 * @return
 	 */
-	public static String getCurrentDate(){
-		Calendar cal = Calendar.getInstance();
-		
-	    String yyyy = Integer.toString(cal.get(Calendar.YEAR));
-	    String mm   = Integer.toString(cal.get(Calendar.MONTH) + 1);
-	    String dd   = Integer.toString(cal.get(Calendar.DAY_OF_MONTH));
-	    String hh   = Integer.toString(cal.get(Calendar.HOUR_OF_DAY));
-	    String mi   = Integer.toString(cal.get(Calendar.MINUTE));
-	    String ss   = Integer.toString(cal.get(Calendar.SECOND));
-	    
-	    return yyyy + (mm.length() == 1 ? "0" + mm : mm) + (dd.length() == 1 ? "0" + dd : dd) + (hh.length() == 1 ? "0" + hh : hh) + (mi.length() == 1 ? "0" + mi : mi) + (ss.length() == 1 ? "0" + ss : ss); 
-	}
+//	public static String getCurrentDate(){
+//		Calendar cal = Calendar.getInstance();
+//		
+//	    String yyyy = Integer.toString(cal.get(Calendar.YEAR));
+//	    String mm   = Integer.toString(cal.get(Calendar.MONTH) + 1);
+//	    String dd   = Integer.toString(cal.get(Calendar.DAY_OF_MONTH));
+//	    String hh   = Integer.toString(cal.get(Calendar.HOUR_OF_DAY));
+//	    String mi   = Integer.toString(cal.get(Calendar.MINUTE));
+//	    String ss   = Integer.toString(cal.get(Calendar.SECOND));
+//	    
+//	    return yyyy + (mm.length() == 1 ? "0" + mm : mm) + (dd.length() == 1 ? "0" + dd : dd) + (hh.length() == 1 ? "0" + hh : hh) + (mi.length() == 1 ? "0" + mi : mi) + (ss.length() == 1 ? "0" + ss : ss); 
+//	}
 
-	/**
-	 * �뙆�씪 �솗�옣�옄瑜� 諛섑솚�븳�떎. 
-	 * @param String fileName
-	 * @param String
-	 * @return
-	 */
-	public static String getFileExt(String fileName ) {
-    	String ext = ""; 
-    	int ind = fileName.lastIndexOf("."); 
-    	if( ind >= 0 ) ext = fileName.substring(ind); 
 
-    	return ext; 
-	}
 }

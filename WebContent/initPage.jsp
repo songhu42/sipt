@@ -98,7 +98,6 @@ if( !isLogined ) {
 		session.setAttribute("userMail"    , user.getEmail());    
 		session.setAttribute("telNo"     , user.getTel_no());   
 		session.setAttribute("authLevel"     , user.getAuth_level());   
-		
 		isLogined = true; 
 
      } else {

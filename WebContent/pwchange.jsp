@@ -28,7 +28,6 @@
 		    	
                 out.println("<script language='javascript'>\n");
 	    		out.println("alert('패스워드가 변경되었습니다.');\n");
-                out.println("self.close();\n");
                 out.println("</script>");
 	    	}
 	    }
@@ -53,11 +52,11 @@ function savepw(){
 	
 	var frm = document.frm; 
 
-	if(frm.prevpw.value == ""){
-        alert("이전 패스워드를 입력하세요.");
-        frm.prevpw.focus();
-        return false;
-    }
+// 	if(frm.prevpw.value == ""){
+//         alert("이전 패스워드를 입력하세요.");
+//         frm.prevpw.focus();
+//         return false;
+//     }
     if(frm.curpw.value == ""){
         alert("새로운 패스워드를 입력하세요.");
         frm.curpw.focus();
