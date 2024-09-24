@@ -1,11 +1,11 @@
 <%@ page contentType = "text/html;charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="/initPage.jsp" %>
-<%@ page import="com.humanval.hsm.util.ComUtil" %>
+<%@ page import="com.humanval.sipt.util.ComUtil" %>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="java.util.ArrayList"%>
-<%@ page import="com.humanval.hsm.dao.Feedback_res"%>
-<%@ page import="com.humanval.hsm.service.Feedback_resService"%>
+<%@ page import="com.humanval.sipt.dao.Feedback_res"%>
+<%@ page import="com.humanval.sipt.service.Feedback_resService"%>
 <%
 	Feedback_resService service = new Feedback_resService(); 
 	Feedback_res info = new Feedback_res(); 

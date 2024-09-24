@@ -1,11 +1,11 @@
 <%@ page contentType = "text/html;charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="/initPage.jsp" %>
-<%@ page import="com.humanval.hsm.util.ComUtil" %>
+<%@ page import="com.humanval.sipt.util.ComUtil" %>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="java.util.ArrayList"%>
-<%@ page import="com.humanval.hsm.dao.User_mst"%>
-<%@ page import="com.humanval.hsm.service.User_mstService"%>
+<%@ page import="com.humanval.sipt.dao.User_mst"%>
+<%@ page import="com.humanval.sipt.service.User_mstService"%>
 <%
 	SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd hh:mm");
 	

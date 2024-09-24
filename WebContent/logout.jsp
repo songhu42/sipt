@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="com.humanval.hsm.util.ComUtil"%>
+<%@ page import="com.humanval.sipt.util.ComUtil"%>
 <%
 try{  
     

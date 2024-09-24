@@ -18,7 +18,7 @@
         WHERE USER_ID > 0 
     </select>
     
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Board_ann">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Board_ann">
 		SELECT A.SEQ_NO, A.TITLE, A.CONTENT, A.DEL_YN, A.VALID_DT, A.IS_POPUP, 
 			A.GAME_TYPE, A.ANN_TYPE, A.USER_ID, A.REG_ID, A.REG_DT, A.MOD_DT, B.NAME AS ANN_TYPE_NM, C.USER_NIC 
 		FROM BOARD_ANN A
@@ -31,7 +31,7 @@
         LIMIT #START_NO#, #PAGE_CNT#
     </select>
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Board_ann">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Board_ann">
 		SELECT A.SEQ_NO, A.TITLE, A.CONTENT, A.DEL_YN, A.VALID_DT, A.IS_POPUP, 
 			A.GAME_TYPE, A.ANN_TYPE, A.USER_ID, A.REG_ID, A.REG_DT, A.MOD_DT, B.NAME AS ANN_TYPE_NM, C.USER_NIC 
 		FROM BOARD_ANN A
@@ -43,7 +43,7 @@
     </select>
     
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Board_ann">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Board_ann">
 		SELECT A.SEQ_NO, A.TITLE, A.CONTENT, A.DEL_YN, A.VALID_DT, A.IS_POPUP, 
 			A.GAME_TYPE, A.ANN_TYPE, A.USER_ID, A.REG_ID, A.REG_DT, A.MOD_DT, B.NAME AS ANN_TYPE_NM, C.USER_NIC 
 		FROM BOARD_ANN A

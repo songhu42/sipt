@@ -12,7 +12,7 @@
         </isNotEmpty>
     </select>
 
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_sync_his">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_sync_his">
 		SELECT A.SEQ_NO, A.SQL_STR, A.EXE_YN, A.DB_VER, A.REG_DT  
 		FROM WORD_SYNC_HIS A
         <isNotEmpty property="WHERE_OPTION">
@@ -22,7 +22,7 @@
         LIMIT #START_NO#, #PAGE_CNT#
     </select>
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_sync_his">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_sync_his">
 		SELECT A.SEQ_NO, A.SQL_STR, A.EXE_YN, A.DB_VER, A.REG_DT  
 		FROM WORD_SYNC_HIS A
         <isNotEmpty property="WHERE_OPTION">
@@ -31,7 +31,7 @@
     </select>
     
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_sync_his">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_sync_his">
 		SELECT A.SEQ_NO, A.SQL_STR, A.EXE_YN, A.DB_VER, A.REG_DT  
 		FROM WORD_SYNC_HIS A
         WHERE A.SEQ_NO = #SEQ_NO#

@@ -16,7 +16,7 @@
         </isNotEmpty>
     </select>
 
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_synonym">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_synonym">
 		SELECT A.SEQ_NO, A.KOR1, A.KOR2, A.KOR3, A.KOR4, A.KOR5, A.KOR6, A.KOR7  
 		FROM WORD_SYNONYM A
         <isNotEmpty property="WHERE_OPTION">
@@ -26,7 +26,7 @@
         LIMIT #START_NO#, #PAGE_CNT#
     </select>
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_synonym">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_synonym">
 		SELECT A.SEQ_NO, A.KOR1, A.KOR2, A.KOR3, A.KOR4, A.KOR5, A.KOR6, A.KOR7  
 		FROM WORD_SYNONYM A
         <isNotEmpty property="WHERE_OPTION">
@@ -35,7 +35,7 @@
     </select>
     
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_synonym">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_synonym">
 		SELECT A.SEQ_NO, A.KOR1, A.KOR2, A.KOR3, A.KOR4, A.KOR5, A.KOR6, A.KOR7  
 		FROM WORD_SYNONYM A
         WHERE A.SEQ_NO = #SEQ_NO#

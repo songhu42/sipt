@@ -1,6 +1,6 @@
 <%@ page contentType = "text/html;charset=UTF-8" %>
 <%
-	String go_url = com.humanval.hsm.util.ComUtil.chNull(request.getParameter("go_url")); 
+String go_url = com.humanval.sipt.util.ComUtil.chNull(request.getParameter("go_url"));
 %>
 <html>
 	<head>

@@ -1,6 +1,6 @@
 <%@ page contentType = "text/html;charset=UTF-8" %>
-<%@ page import="com.humanval.hsm.service.Admin_mstService" %>
-<%@ page import="com.humanval.hsm.util.Crypto" %>
+<%@ page import="com.humanval.sipt.service.Admin_mstService" %>
+<%@ page import="com.humanval.sipt.util.Crypto" %>
 <%@ include file="initPage.jsp" %>
 <%
 

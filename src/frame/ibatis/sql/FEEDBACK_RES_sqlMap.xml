@@ -24,7 +24,7 @@
         </isNotEmpty>
     </select>
 
-    <select id="getFeedbackSum" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Feedback_sum">
+    <select id="getFeedbackSum" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Feedback_sum">
 		SELECT SUM(IF(RES_TYPE=0, 1, 0)) AS LIKE_CNT, SUM(IF(RES_TYPE=1, 1, 0)) AS GAME_CNT, 
 			SUM(IF(RES_TYPE=2, 1, 0)) AS STUDY_CNT, SUM(IF(RES_TYPE=3, 1, 0)) AS HEART_CNT, 
 			SUM(IF(RES_TYPE=4, 1, 0)) AS REQ_CNT, SUM(IF(RES_TYPE=8, 1, 0)) AS ERROR_CNT, 
@@ -37,7 +37,7 @@
         
     </select>
     
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Feedback_res">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Feedback_res">
 		SELECT A.SEQ_NO, A.USER_ID, A.RESULT, A.RES_YN, A.RES_TYPE, A.RES_ST, A.RES_SEQ, A.REG_DT, 
 		B.TITLE, B.CONTENT, B.TARGET, B.CONT_LIMIT,  B.HEART_CNT AS REW_HEART_CNT, B.DAMON_CNT AS REW_DAMON_CNT, B.VALID_DT, 
 		C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.WP_LVL, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
@@ -67,7 +67,7 @@
     </select>
     
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Feedback_res">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Feedback_res">
 		SELECT A.SEQ_NO, A.USER_ID, A.RESULT, A.RES_YN, A.RES_TYPE, A.RES_ST, A.RES_SEQ, A.REG_DT, 
 		B.TITLE, B.CONTENT, B.TARGET, B.CONT_LIMIT,  B.HEART_CNT AS REW_HEART_CNT, B.DAMON_CNT AS REW_DAMON_CNT, B.VALID_DT, 
 		C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.WP_LVL, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
@@ -95,7 +95,7 @@
         
     </select>
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Feedback_res">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Feedback_res">
 		SELECT A.SEQ_NO, A.USER_ID, A.RESULT, A.RES_YN, A.RES_TYPE, A.RES_ST, A.RES_SEQ, A.REG_DT, 
 		B.TITLE, B.CONTENT, B.TARGET, B.CONT_LIMIT,  B.HEART_CNT AS REW_HEART_CNT, B.DAMON_CNT AS REW_DAMON_CNT, B.VALID_DT, 
 		C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.WP_LVL, C.LOGIN_TYPE, C.DEVICE_TOKEN, 

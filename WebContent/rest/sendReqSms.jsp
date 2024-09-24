@@ -1,13 +1,13 @@
 <%@ page contentType = "text/json;charset=utf-8" %> 
-<%@ page import="com.humanval.hsm.dao.Com_code"%>
-<%@ page import="com.humanval.hsm.util.ComUtil"%>
-<%@ page import="com.humanval.hsm.util.SMS"%>
-<%@ page import="com.humanval.hsm.dao.User_mst"%>
-<%@ page import="com.humanval.hsm.dao.Sms_his"%>
-<%@ page import="com.humanval.hsm.service.User_mstService"%>
-<%@ page import="com.humanval.hsm.service.Sms_hisService"%>
+<%@ page import="com.humanval.sipt.dao.Com_code"%>
+<%@ page import="com.humanval.sipt.util.ComUtil"%>
+<%@ page import="com.humanval.sipt.util.SMS"%>
+<%@ page import="com.humanval.sipt.dao.User_mst"%>
+<%@ page import="com.humanval.sipt.dao.Sms_his"%>
+<%@ page import="com.humanval.sipt.service.User_mstService"%>
+<%@ page import="com.humanval.sipt.service.Sms_hisService"%>
 <%@ page import="java.util.List"%>
-<%@ page import="com.humanval.hsm.service.Com_codeService"%>
+<%@ page import="com.humanval.sipt.service.Com_codeService"%>
 
 <%
 	String msg = ComUtil.chNull(request.getParameter("msg")); 

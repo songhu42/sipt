@@ -1,14 +1,14 @@
 <%@ page contentType = "text/html;charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="/initPage.jsp" %>
-<%@ page import="com.humanval.hsm.util.ComUtil" %>
+<%@ page import="com.humanval.sipt.util.ComUtil" %>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="java.util.ArrayList"%>
-<%@ page import="com.humanval.hsm.dao.Word_sync_his"%>
-<%@ page import="com.humanval.hsm.service.Word_sync_hisService"%>
-<%@ page import="com.humanval.hsm.dao.Word_synonym"%>
-<%@ page import="com.humanval.hsm.service.Word_synonymService"%>
-<%@ page import="com.humanval.hsm.service.Sync_data_infoService"%>
+<%@ page import="com.humanval.sipt.dao.Word_sync_his"%>
+<%@ page import="com.humanval.sipt.service.Word_sync_hisService"%>
+<%@ page import="com.humanval.sipt.dao.Word_synonym"%>
+<%@ page import="com.humanval.sipt.service.Word_synonymService"%>
+<%@ page import="com.humanval.sipt.service.Sync_data_infoService"%>
 
 <%
 	SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd");

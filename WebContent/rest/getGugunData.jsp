@@ -1,8 +1,8 @@
 <%@ page contentType = "text/json;charset=utf-8" %> 
-<%@ page import="com.humanval.hsm.dao.Com_code"%>
-<%@ page import="com.humanval.hsm.util.ComUtil"%>
+<%@ page import="com.humanval.sipt.dao.Com_code"%>
+<%@ page import="com.humanval.sipt.util.ComUtil"%>
 <%@ page import="java.util.List"%>
-<%@ page import="com.humanval.hsm.service.Com_codeService"%>
+<%@ page import="com.humanval.sipt.service.Com_codeService"%>
 
 <%
 	String sido = ComUtil.chNull(request.getParameter("sido"));

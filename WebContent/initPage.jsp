@@ -1,10 +1,10 @@
 <%@ page import="java.text.*" %>
-<%@ page import="com.humanval.hsm.util.ComUtil" %>
-<%@ page import="com.humanval.hsm.dao.Admin_mst"%>
-<%@ page import="com.humanval.hsm.dao.Com_code"%>
-<%@ page import="com.humanval.hsm.service.Com_codeService"%>
-<%@ page import="com.humanval.hsm.service.Admin_mstService"%>
-<%@ page import="com.humanval.hsm.dao.User_cookie"%>
+<%@ page import="com.humanval.sipt.util.ComUtil" %>
+<%@ page import="com.humanval.sipt.dao.Admin_mst"%>
+<%@ page import="com.humanval.sipt.dao.Com_code"%>
+<%@ page import="com.humanval.sipt.service.Com_codeService"%>
+<%@ page import="com.humanval.sipt.service.Admin_mstService"%>
+<%@ page import="com.humanval.sipt.dao.User_cookie"%>
 <%@ page import="java.util.List"%>
 
 <%

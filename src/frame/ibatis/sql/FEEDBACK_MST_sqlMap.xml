@@ -17,7 +17,7 @@
         SELECT MAX(SEQ_NO) FROM FEEDBACK_MST  
     </select>
     
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Feedback_mst">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Feedback_mst">
 		SELECT A.SEQ_NO, A.TITLE, A.CONTENT, A.DEL_YN, A.VALID_DT, A.TARGET, A.CONT_LIMIT, A.HEART_CNT, A.DAMON_CNT, 
 			A.GAME_TYPE, A.REG_ID, A.REG_DT, A.MOD_DT 
 		FROM FEEDBACK_MST A
@@ -28,7 +28,7 @@
         LIMIT #START_NO#, #PAGE_CNT#
     </select>
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Feedback_mst">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Feedback_mst">
 		SELECT A.SEQ_NO, A.TITLE, A.CONTENT, A.DEL_YN, A.VALID_DT, A.TARGET, A.CONT_LIMIT, A.HEART_CNT, A.DAMON_CNT, 
 			A.GAME_TYPE, A.REG_ID, A.REG_DT, A.MOD_DT 
 		FROM FEEDBACK_MST A
@@ -38,7 +38,7 @@
     </select>
     
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Feedback_mst">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Feedback_mst">
 		SELECT A.SEQ_NO, A.TITLE, A.CONTENT, A.DEL_YN, A.VALID_DT, A.TARGET, A.CONT_LIMIT, A.HEART_CNT, A.DAMON_CNT, 
 			A.GAME_TYPE, A.REG_ID, A.REG_DT, A.MOD_DT 
 		FROM FEEDBACK_MST A

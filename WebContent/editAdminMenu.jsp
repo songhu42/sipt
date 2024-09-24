@@ -1,10 +1,10 @@
 <%@ page contentType = "text/html;charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="/initPage.jsp" %>
-<%@ page import="com.humanval.hsm.util.ComUtil" %>
+<%@ page import="com.humanval.sipt.util.ComUtil" %>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.ArrayList"%>
-<%@ page import="com.humanval.hsm.dao.Admin_menu"%>
-<%@ page import="com.humanval.hsm.service.Admin_menuService"%>
+<%@ page import="com.humanval.sipt.dao.Admin_menu"%>
+<%@ page import="com.humanval.sipt.service.Admin_menuService"%>
 <%
 	Admin_menuService service = new Admin_menuService(); 
 	Admin_menu info = new Admin_menu(); 

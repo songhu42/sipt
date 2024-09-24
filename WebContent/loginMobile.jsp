@@ -1,10 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="java.util.Hashtable" %>  
-<%@ page import="com.humanval.hsm.util.InitConfig" %>   
-<%@ page import="com.humanval.hsm.util.ComUtil" %>  
-<%@ page import="com.humanval.hsm.service.Admin_mstService" %>  
-<%@ page import="com.humanval.hsm.dao.Admin_mst" %>
-<%@ page import="com.humanval.hsm.util.Crypto" %>
+<%@ page import="com.humanval.sipt.util.InitConfig" %>   
+<%@ page import="com.humanval.sipt.util.ComUtil" %>  
+<%@ page import="com.humanval.sipt.service.Admin_mstService" %>  
+<%@ page import="com.humanval.sipt.dao.Admin_mst" %>
+<%@ page import="com.humanval.sipt.util.Crypto" %>
 
 <%
 Admin_mstService mgrSrv = new Admin_mstService(); 

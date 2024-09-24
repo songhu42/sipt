@@ -20,7 +20,7 @@
         </isNotEmpty>
     </select>
 
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.User_mst">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.User_mst">
 		SELECT C.USER_ID, C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
 		C.JOIN_DT, C.MAX_HEART_CNT, C.HEART_CNT, C.PASS_ITEM_CNT, C.TIME_ITEM_CNT, C.EVENT_DAYS, C.EVENT_DT, C.APP_VER, 
 		C.USER_AGE, D.NAME AS USER_AGE_NM, IFNULL(C.INVITOR_ID,0) AS INVITOR_ID, IFNULL(E.BUY_CNT,0) AS BUY_CNT, IFNULL(E.BUY_TOT_AMT, 0) AS BUY_TOT_AMT, 
@@ -44,7 +44,7 @@
     </select>
     
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.User_mst">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.User_mst">
 		SELECT C.USER_ID, C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
 		C.JOIN_DT, C.MAX_HEART_CNT, C.HEART_CNT, C.PASS_ITEM_CNT, C.TIME_ITEM_CNT, C.EVENT_DAYS, C.EVENT_DT, C.APP_VER, 
 		C.USER_AGE, D.NAME AS USER_AGE_NM, IFNULL(C.INVITOR_ID,0) AS INVITOR_ID, IFNULL(E.BUY_CNT,0) AS BUY_CNT, IFNULL(E.BUY_TOT_AMT, 0) AS BUY_TOT_AMT, 
@@ -66,7 +66,7 @@
         
     </select>
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.User_mst">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.User_mst">
 		SELECT C.USER_ID, C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
 		C.JOIN_DT, C.MAX_HEART_CNT, C.HEART_CNT, C.PASS_ITEM_CNT, C.TIME_ITEM_CNT, C.EVENT_DAYS, C.EVENT_DT, C.APP_VER, 
 		C.USER_AGE, D.NAME AS USER_AGE_NM, IFNULL(C.INVITOR_ID,0) AS INVITOR_ID, IFNULL(E.BUY_CNT,0) AS BUY_CNT, IFNULL(E.BUY_TOT_AMT, 0) AS BUY_TOT_AMT, 

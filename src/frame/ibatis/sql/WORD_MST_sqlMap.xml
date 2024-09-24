@@ -12,7 +12,7 @@
         </isNotEmpty>
     </select>
 
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_mst">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_mst">
 		SELECT A.WORD_ID, A.ENG, A.KOR
 		FROM WORD_MST A
         <isNotEmpty property="WHERE_OPTION">
@@ -22,7 +22,7 @@
         LIMIT #START_NO#, #PAGE_CNT#
     </select>
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_mst">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_mst">
 		SELECT A.WORD_ID, A.ENG, A.KOR
 		FROM WORD_MST A
         <isNotEmpty property="WHERE_OPTION">
@@ -31,7 +31,7 @@
     </select>
     
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Word_mst">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Word_mst">
 		SELECT A.WORD_ID, A.ENG, A.KOR
 		FROM WORD_MST A
         WHERE A.WORD_ID = #WORD_ID# 

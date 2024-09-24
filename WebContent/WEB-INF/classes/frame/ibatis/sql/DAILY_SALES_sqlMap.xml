@@ -21,7 +21,7 @@
 		FROM USER_MST WHERE DATE_FORMAT(JOIN_DT, '%Y%m%d') = #SUMUP_DT#   
     </select>
     
-    <select id="getDailySales" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.DailySales">
+    <select id="getDailySales" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.DailySales">
         SELECT DATE, SUM(NEW_USER) AS NEW_USER, SUM(BUY_CNT) AS BUY_CNT, SUM(BUY_AMT) AS BUY_AMT, SUM(ADV_CNT) AS SHARE_TOT, 
         SUM(SHARE_TOT) AS ADV_CNT, SUM(SHARE_FB) AS SHARE_FB, SUM(SHARE_CACAO) AS SHARE_CACAO, SUM(SHARE_STORY) AS SHARE_STORY, 
         SUM(FEEDBACK_CNT) AS FEEDBACK_CNT, SUM(GAME_USER) AS GAME_USER, SUM(GAME_CNT) AS GAME_CNT
@@ -36,7 +36,7 @@
     </select>
     
     
-    <select id="getDailySalesDesc" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.DailySales">
+    <select id="getDailySalesDesc" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.DailySales">
         SELECT DATE, SUM(NEW_USER) AS NEW_USER, SUM(BUY_CNT) AS BUY_CNT, SUM(BUY_AMT) AS BUY_AMT, SUM(ADV_CNT) AS SHARE_TOT, 
         SUM(SHARE_TOT) AS ADV_CNT, SUM(SHARE_FB) AS SHARE_FB, SUM(SHARE_CACAO) AS SHARE_CACAO, SUM(SHARE_STORY) AS SHARE_STORY, 
         SUM(FEEDBACK_CNT) AS FEEDBACK_CNT, SUM(GAME_USER) AS GAME_USER, SUM(GAME_CNT) AS GAME_CNT

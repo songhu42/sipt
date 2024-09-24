@@ -18,7 +18,7 @@
     </select>
 
     
-    <select id="getSum" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Buy_history">
+    <select id="getSum" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Buy_history">
 		SELECT COUNT(*) AS BUY_CNT, IFNULL(SUM(E.PRICE),0) AS BUY_TOT_AMT 
 		FROM BUY_HISTORY A  
 		INNER JOIN USER_MST C ON ( A.USER_ID = C.USER_ID ) 
@@ -33,7 +33,7 @@
     
        
     
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Buy_history">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Buy_history">
 		SELECT A.USER_ID, A.ITEM_ID, A.SEQ_NO, A.ADD_HEART, A.ADD_MAX_HEART, A.REG_DT, A.RECEIPT_ID, 
 		C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
 		C.JOIN_DT, C.MAX_HEART_CNT, C.HEART_CNT, C.USER_AGE, D.NAME AS USER_AGE_NM,  
@@ -52,7 +52,7 @@
     </select>
     
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Buy_history">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Buy_history">
 		SELECT A.USER_ID, A.ITEM_ID, A.SEQ_NO, A.ADD_HEART, A.ADD_MAX_HEART, A.REG_DT, A.RECEIPT_ID, 
 		C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
 		C.JOIN_DT, C.MAX_HEART_CNT, C.HEART_CNT, C.USER_AGE, D.NAME AS USER_AGE_NM,  
@@ -69,7 +69,7 @@
         
     </select>
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Buy_history">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Buy_history">
 		SELECT A.USER_ID, A.ITEM_ID, A.SEQ_NO, A.ADD_HEART, A.ADD_MAX_HEART, A.REG_DT, A.RECEIPT_ID, 
 		C.USER_NIC, C.STAGE, C.USER_GRADE, C.USER_LVL, C.USER_GOLD, C.USER_EXP, C.WP_ITEM, C.LOGIN_TYPE, C.DEVICE_TOKEN, 
 		C.JOIN_DT, C.MAX_HEART_CNT, C.HEART_CNT, C.USER_AGE, D.NAME AS USER_AGE_NM,  

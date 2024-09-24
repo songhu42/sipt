@@ -12,7 +12,7 @@
         </isNotEmpty>
     </select>
 
-    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Admin_menu">
+    <select id="getListPage" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Admin_menu">
 		SELECT A.MENU_ID, A.MENU_NM, A.GRP_NM, A.GRP_SORTS, A.SORTS, 
 			A.CONT_TYPE, A.CONTENT, A.AUTH_LEVEL, A.IS_USED, A.OPEN_AREA, A.POPUP_OPT, A.REMRKS, A.REG_DT, 
 			B.NAME AS CONT_TYPE_NM, C.NAME AS AUTH_LEVEL_NM, D.NAME AS OPEN_AREA_NM 
@@ -27,7 +27,7 @@
         LIMIT #START_NO#, #PAGE_CNT#
     </select>
     
-    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Admin_menu">
+    <select id="getList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Admin_menu">
 		SELECT A.MENU_ID, A.MENU_NM, A.GRP_NM, A.GRP_SORTS, A.SORTS, 
 			A.CONT_TYPE, A.CONTENT, A.AUTH_LEVEL, A.IS_USED, A.OPEN_AREA, A.POPUP_OPT, A.REMRKS, A.REG_DT, 
 			B.NAME AS CONT_TYPE_NM, C.NAME AS AUTH_LEVEL_NM, D.NAME AS OPEN_AREA_NM 
@@ -42,7 +42,7 @@
     </select>
     
     
-    <select id="selectGroupList" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Admin_menu">
+    <select id="selectGroupList" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Admin_menu">
 		SELECT '' AS MENU_ID, '' AS MENU_NM, A.GRP_NM, A.GRP_SORTS, 0 AS SORTS, 
 			'' AS CONT_TYPE, '' AS CONTENT, '' AS AUTH_LEVEL, 1 AS IS_USED, '' AS OPEN_AREA, '' AS POPUP_OPT, '' AS REMRKS, NOW() AS REG_DT, 
 			'' AS CONT_TYPE_NM, '' AS AUTH_LEVEL_NM, '' AS OPEN_AREA_NM 
@@ -56,7 +56,7 @@
     </select>
     
     
-    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.hsm.dao.Admin_menu">
+    <select id="getView" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.Admin_menu">
 		SELECT A.MENU_ID, A.MENU_NM, A.GRP_NM, A.GRP_SORTS, A.SORTS, 
 			A.CONT_TYPE, A.CONTENT, A.AUTH_LEVEL, A.IS_USED, A.OPEN_AREA, A.POPUP_OPT, A.REMRKS, A.REG_DT, 
 			B.NAME AS CONT_TYPE_NM, C.NAME AS AUTH_LEVEL_NM, D.NAME AS OPEN_AREA_NM 
