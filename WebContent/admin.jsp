@@ -145,11 +145,6 @@ for(int i=0; i<menuList.size(); i++ ) {
 			</section>
 			
 
-					
-<jsp:include page="footer.jsp" flush="false">
-	<jsp:param name="isLogin"  value="<%=isLogined%>" />
-</jsp:include>
-
 <script>
 
 (function($) {

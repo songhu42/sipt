@@ -18,6 +18,9 @@ public class User_mst {
 	private String state;
 	private Date reg_dt;
 	
+	private String user_grade_nm; 
+	private String state_nm; 
+	
 	public long getUser_id() {
 		return user_id;
 	}
@@ -101,6 +104,18 @@ public class User_mst {
 	}
 	public void setReg_dt(Date reg_dt) {
 		this.reg_dt = reg_dt;
+	}
+	public String getUser_grade_nm() {
+		return user_grade_nm;
+	}
+	public void setUser_grade_nm(String user_grade_nm) {
+		this.user_grade_nm = user_grade_nm;
+	}
+	public String getState_nm() {
+		return state_nm;
+	}
+	public void setState_nm(String state_nm) {
+		this.state_nm = state_nm;
 	}
 
 	

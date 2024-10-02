@@ -18,6 +18,7 @@
 
     <!-- user sql schema list -->
     <sqlMap resource="frame/ibatis/sql/USER_MST_sqlMap.xml" />
+    <sqlMap resource="frame/ibatis/sql/CLASS_MST_sqlMap.xml" />
     <sqlMap resource="frame/ibatis/sql/COM_CODE_sqlMap.xml" />
     <sqlMap resource="frame/ibatis/sql/ADMIN_MST_sqlMap.xml" />
     <sqlMap resource="frame/ibatis/sql/ADMIN_MENU_sqlMap.xml" />

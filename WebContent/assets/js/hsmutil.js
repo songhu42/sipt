@@ -43,6 +43,10 @@ function openBoardAnnEdit(seq_no) {
 	var url = "editBoardAnn.jsp?selSeqNo=" + seq_no + "&saveAction=E"; 
 	openPopup(url); 
 }
+function openUserMstEdit(user_id) {
+	var url = "editUserMst.jsp?selUserId=" + user_id + "&saveAction=E"; 
+	openPopup(url); 
+}
 function openFeedbackMstEdit(seq_no) {
 	var url = "editFeedbackMst.jsp?selSeqNo=" + seq_no + "&saveAction=E"; 
 	openPopup(url); 

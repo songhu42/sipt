@@ -90,5 +90,71 @@ public class User_mstService {
 		return mst;
 	}
 
+	
+
+	public int insert(User_mst vo) throws Exception  {
+		int rtn = 0;
+        Map<Object, Object> prmMap = new HashMap<Object, Object>();
+
+		prmMap.put("ADMIN_ID", vo.getAdmin_id());
+		prmMap.put("USER_NM", vo.getUser_nm());
+		prmMap.put("USER_NIC", vo.getUser_nic());
+		prmMap.put("USER_GRADE", vo.getUser_grade());
+		prmMap.put("USER_LVL", vo.getUser_lvl());
+		prmMap.put("TEL_NO", vo.getTel_no());
+		prmMap.put("ADD_TEL", vo.getAdd_tel());
+		prmMap.put("EMAIL", vo.getEmail());
+		prmMap.put("IMAGE", vo.getImage());
+		prmMap.put("JOIN_DT", vo.getJoin_dt());
+		prmMap.put("LEAVE_DT", vo.getLeave_dt());
+		prmMap.put("STATE", vo.getState());
+
+		rtn = im.Insert(prmMap, "USER_MST.insert");
+		if( rtn <= 0 ) throw new Exception("SQL Exception"); 
+
+		return rtn;
+		
+	}
+
+	public int update(User_mst vo) throws Exception  {
+		int rtn = 0;
+        Map<Object, Object> prmMap = new HashMap<Object, Object>();
+
+		prmMap.put("USER_ID", vo.getUser_id());
+		prmMap.put("ADMIN_ID", vo.getAdmin_id());
+		prmMap.put("USER_NM", vo.getUser_nm());
+		prmMap.put("USER_NIC", vo.getUser_nic());
+		prmMap.put("USER_GRADE", vo.getUser_grade());
+		prmMap.put("USER_LVL", vo.getUser_lvl());
+		prmMap.put("TEL_NO", vo.getTel_no());
+		prmMap.put("ADD_TEL", vo.getAdd_tel());
+		prmMap.put("EMAIL", vo.getEmail());
+		prmMap.put("IMAGE", vo.getImage());
+		prmMap.put("JOIN_DT", vo.getJoin_dt());
+		prmMap.put("LEAVE_DT", vo.getLeave_dt());
+		prmMap.put("STATE", vo.getState());
+
+		rtn = im.Update(prmMap, "USER_MST.update");
+		if( rtn <= 0 ) throw new Exception("SQL Exception"); 
+
+		return rtn;
+		
+	}
+
+	
+	public int delete(User_mst vo) throws Exception  {
+		int rtn = 0;
+        Map<Object, Object> prmMap = new HashMap<Object, Object>();
+		
+		prmMap.put("USER_ID", vo.getUser_id());
+		
+		rtn = im.Update(prmMap, "USER_MST.delete");
+		if( rtn <= 0 ) throw new Exception("SQL Exception"); 
+
+		return rtn;
+		
+	}
+		
+	
 
 }

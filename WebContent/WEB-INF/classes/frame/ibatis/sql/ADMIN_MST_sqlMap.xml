@@ -48,12 +48,12 @@
     
     <select id="getAutoLoginKey" parameterClass="java.util.Map" resultClass="com.humanval.sipt.dao.User_cookie">
         SELECT ADMIN_ID , AUTO_LOGIN_KEY, REMOTE_ADDR
-		FROM USER_COOKIE
+		FROM ADMIN_COOKIE
 		WHERE ADMIN_ID = #ADMIN_ID# 
     </select>
     
     <statement id="insertAutoLoginKey" parameterClass="java.util.Map" resultClass="int">
-		INSERT USER_COOKIE(ADMIN_ID, AUTO_LOGIN_KEY, REMOTE_ADDR, REG_DT) 
+		INSERT ADMIN_COOKIE(ADMIN_ID, AUTO_LOGIN_KEY, REMOTE_ADDR, REG_DT) 
 		VALUES (#ADMIN_ID#, #AUTO_LOGIN_KEY#, #REMOTE_ADDR#, NOW())
     </statement> 
     
